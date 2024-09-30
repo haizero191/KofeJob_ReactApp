@@ -3,8 +3,7 @@
    align-items: center;
    justify-content: space-between;
    width: 100%;
-   height: 70px;
-
+   height: 74px;
 }
 
 .Header .navbar-header {
@@ -13,6 +12,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 8px;
+    margin-right: 40px;
 }
 
 .Header .navbar-header .logo {

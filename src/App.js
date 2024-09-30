@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/user/Footer/Footer";
 import Header from "./components/user/Header/Header";
 import AppRoutes from "./routes/AppRoutes";
 
@@ -14,7 +15,11 @@ function App() {
         <div className="app-main">
           <AppRoutes />
         </div>
-        <div className="app-footer">Footer</div>
+        <div className="app-footer">
+          <div className="container">
+            <Footer />
+          </div>
+        </div>
       </div>
     </div>
   );
