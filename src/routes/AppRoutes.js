@@ -4,6 +4,7 @@ import Home from "../pages/user/Home/Home";
 import Login from "../pages/user/Login/Login";
 import Register from "../pages/user/Register/Register";
 import Developer from "../pages/user/Developer/Developer";
+import Project from "../pages/user/Project/Project";
 
 const AppRoutes = () => {
   return (
@@ -14,13 +15,15 @@ const AppRoutes = () => {
       {/* Login Router */}
       <Route path="/login" element={<Login />} />
 
-      {/* Login Router */}
+      {/* Register Router */}
       <Route path="/register" element={<Register />} />
 
-      {/* Login Router */}
+      {/* Developer Router */}
       <Route path="/developer" element={<Developer />} />
 
-      
+      {/* Project Router */}
+      <Route path="/project" element={<Project />} />
+
     </Routes>
   );
 };

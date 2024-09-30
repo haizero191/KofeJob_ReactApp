@@ -3,10 +3,11 @@
     height: auto;
     position: sticky;
     top: -45%;
-    min-height: 1000px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 40px;
 }
 
 .FilterSide .filter-container {
@@ -19,6 +20,7 @@
     -webkit-align-items: center;
     padding: 15px 20px;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
 }
 
 .FilterSide .filter-container .filter-title h4{

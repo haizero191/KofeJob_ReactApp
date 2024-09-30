@@ -1,14 +1,15 @@
 import React from "react";
-import Logo from "../../../assets/images/Fcon.jpg";
+
 import "./Header.css";
 import DropMenu from "../DropMenu/DropMenu";
 import LogoHeader from "../../../assets/images/logo.svg"
 import { useNavigate } from "react-router-dom";
 const Header = () => {
 
-  const navigate = useNavigate();
+  
 
   /* NAVIGATE TO PAGE  ------------------- */
+  const navigate = useNavigate();
   const onNavRoute = (endpoint) => {
     navigate(endpoint)
   }
@@ -30,16 +31,16 @@ const Header = () => {
       {/* Auth header */}
       <div className="auth-header">
         <div className="auth-button register" onClick={() => onNavRoute('/register')}>
-          <i class="bi bi-person"></i>
+          <i className="bi bi-person"></i>
           <span>Register</span>
         </div>
         <div className="line"></div>
         <div className="auth-button login" onClick={() => onNavRoute('/login')}>
-          <i class="bi bi-person-lock"></i>
+          <i className="bi bi-person-lock"></i>
           <span>Login</span>
         </div>
         <div className="project-add">
-          <i class="bi bi-plus"></i>
+          <i className="bi bi-plus"></i>
           Post a project
         </div>
       </div>

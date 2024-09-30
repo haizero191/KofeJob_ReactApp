@@ -6,6 +6,8 @@ import BlogImg2 from "../../../assets/images/blog/blog-02.jpg";
 import BlogImg3 from "../../../assets/images/blog/blog-03.jpg";
 import AuthorImg1 from "../../../assets/images/img-02.jpg";
 import AuthorImg2 from "../../../assets/images/img-03.jpg";
+
+
 const BlogCard = ({ data }) => {
   return (
     <div className="BlogCard">
@@ -23,7 +25,7 @@ const BlogCard = ({ data }) => {
           <p className="name">{data.author ? data.author.name : ""}</p>
         </div>
         <p>
-          <i class="bi bi-calendar-check-fill"></i> {data.createdAt}
+          <i className="bi bi-calendar-check-fill"></i> {data.createdAt}
         </p>
       </div>
       <div className="info">
@@ -31,7 +33,7 @@ const BlogCard = ({ data }) => {
         <p>{data.desc}</p>
       </div>
       <a href>
-        Read more <i class="fas fa-arrow-right ms-1"></i>
+        Read more <i className="fas fa-arrow-right ms-1"></i>
       </a>
     </div>
   );

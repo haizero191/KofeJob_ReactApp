@@ -1,10 +1,9 @@
-import React from "react"
-import "./DevCardView.css"
+import React from "react";
+import "./ProjectCardView.css";
 
-
-const DevCardView = ({ infomation }) => {
+const ProjectCardView = ({infomation}) => {
   return (
-    <div className="DevCardView">
+    <div className="ProjectCardView">
       <div className="dev-card-container">
         <div className="box-color"></div>
         <div className="avatar">
@@ -16,9 +15,7 @@ const DevCardView = ({ infomation }) => {
         <div className="info">
           <p>{infomation.name}</p>
           <p>{infomation.position}</p>
-          <p>
-            Ho Chi Minh, Viet Nam
-          </p>
+          <p>Ho Chi Minh, Viet Nam</p>
         </div>
         <div className="voting">
           <i className="bi bi-star-fill"></i>
@@ -29,17 +26,23 @@ const DevCardView = ({ infomation }) => {
         </div>
         <div className="tags">
           {infomation.tags.map((tag) => {
-            return <div className="tag" key={infomation.name + tag}>{tag}</div>;
+            return (
+              <div className="tag" key={infomation.name + tag}>
+                {tag}
+              </div>
+            );
           })}
         </div>
         <div className="salary">
           <h4>{infomation.salary}</h4>
         </div>
-        <button className="invite">Invite</button>
-        <button className="view-profile">View profile</button>
+        <div className="left">
+            <span>4 Days Left</span>
+        </div>
+        <button className="view-profile">View project</button>
       </div>
     </div>
   );
 };
 
-export default DevCardView;
+export default ProjectCardView;

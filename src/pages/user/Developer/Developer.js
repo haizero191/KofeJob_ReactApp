@@ -100,7 +100,7 @@ const Developer = () => {
     <div className="Developer">
       <div className="section-bread-crumb">
         <div className="container">
-          <BreadCrumb />
+          <BreadCrumb title="Freelancer Grid" page="Developer"/>
         </div>
       </div>
 
@@ -116,9 +116,9 @@ const Developer = () => {
                 <CustomSelect options={options} placeholder="Sort By" />
               </div>
               <div className="dev-list-inner">
-                {developers.map((dev) => {
+                {developers.map((dev, index) => {
                   return (
-                    <div class="dev-card">
+                    <div className="dev-card" key={dev.name+ "_" + index}>
                       <DevCardView infomation={dev} />
                     </div>
                   );

@@ -12,7 +12,7 @@ const DropMenu = () => {
       ref: [
         {
           sub: "Freelancer List",
-          href: "/",
+          href: "/developer",
         },
       ],
     },
@@ -54,6 +54,10 @@ const DropMenu = () => {
     },
   ];
 
+
+  
+ 
+
   // Freelancers Data 
   const freelancer = [
     {
@@ -67,6 +71,7 @@ const DropMenu = () => {
     {
       sub: "Projects",
       ref: [],
+      href: "/project"
     },
     {
       sub: "Membership",
@@ -119,7 +124,7 @@ const DropMenu = () => {
         {/* Employees */}
         <div className="nav-item nav-dropmenu">
           <span>For employers</span>
-          <i class="bi bi-chevron-down"></i>
+          <i className="bi bi-chevron-down"></i>
           <div className="nav-menu-container">
             {employers.map((emp) => {
               return (
@@ -127,13 +132,14 @@ const DropMenu = () => {
                   className={
                     "sub-nav-item" + (emp.ref.length > 0 ? " sub-nav-drop" : "")
                   }
+                  key={emp.sub}
                 >
                   {emp.sub}
-                  {emp.ref.length > 0 && <i class="bi bi-chevron-right"></i>}
+                  {emp.ref.length > 0 && <i className="bi bi-chevron-right"></i>}
                   {emp.ref.length > 0 && (
                     <div className="nav-ref-container">
                       {emp.ref.map((refer) => {
-                        return <div className="sub-nav-item">{refer.sub}</div>;
+                        return <div className="sub-nav-item" key={refer.sub} onClick={() => onNavRoute(refer.href)}>{refer.sub}</div>;
                       })}
                     </div>
                   )}
@@ -147,7 +153,7 @@ const DropMenu = () => {
         {/* Freelancer */}
         <div className="nav-item nav-dropmenu">
           <span>For freelancer</span>
-          <i class="bi bi-chevron-down"></i>
+          <i className="bi bi-chevron-down"></i>
           <div className="nav-menu-container">
             {freelancer.map((emp) => {
               return (
@@ -155,13 +161,15 @@ const DropMenu = () => {
                   className={
                     "sub-nav-item" + (emp.ref.length > 0 ? " sub-nav-drop" : "")
                   }
+                  key={emp.sub}
+                  onClick={() => onNavRoute(emp.href ? emp.href : "")}
                 >
                   {emp.sub}
-                  {emp.ref.length > 0 && <i class="bi bi-chevron-right"></i>}
+                  {emp.ref.length > 0 && <i className="bi bi-chevron-right"></i>}
                   {emp.ref.length > 0 && (
                     <div className="nav-ref-container">
                       {emp.ref.map((refer) => {
-                        return <div className="sub-nav-item">{refer.sub}</div>;
+                        return <div className="sub-nav-item" key={refer.sub} onClick={onNavRoute(refer.href)}>{refer.sub}</div>;
                       })}
                     </div>
                   )}
@@ -173,13 +181,14 @@ const DropMenu = () => {
 
         <div className="nav-item nav-dropmenu">
           <span>Pages</span>
-          <i class="bi bi-chevron-down"></i>
+          <i className="bi bi-chevron-down"></i>
           <div className="nav-menu-container"></div>
         </div>
+
         {/* Freelancer */}
         <div className="nav-item nav-dropmenu">
           <span>Blogs</span>
-          <i class="bi bi-chevron-down"></i>
+          <i className="bi bi-chevron-down"></i>
           <div className="nav-menu-container">
             {blogs.map((emp) => {
               return (
@@ -187,13 +196,14 @@ const DropMenu = () => {
                   className={
                     "sub-nav-item" + (emp.ref.length > 0 ? " sub-nav-drop" : "")
                   }
+                  key={emp.sub}
                 >
                   {emp.sub}
-                  {emp.ref.length > 0 && <i class="bi bi-chevron-right"></i>}
+                  {emp.ref.length > 0 && <i className="bi bi-chevron-right"></i>}
                   {emp.ref.length > 0 && (
                     <div className="nav-ref-container">
                       {emp.ref.map((refer) => {
-                        return <div className="sub-nav-item">{refer.sub}</div>;
+                        return <div className="sub-nav-item" key={refer.sub} onClick={onNavRoute(refer.href)}>{refer.sub}</div>;
                       })}
                     </div>
                   )}

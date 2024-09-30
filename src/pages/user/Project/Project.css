@@ -1,27 +1,27 @@
-.Developer {
+.Project {
 
 }
 
-.Developer .section-bread-crumb {
+.Project .section-bread-crumb {
     background-color: #FFF5F3;
 }
 
 
-.Developer .section-dev-list {
+.Project .section-dev-list {
     padding: 80px 0 30px;
 }
 
-.Developer .section-dev-list .dev-list {
+.Project .section-dev-list .dev-list {
 
 }
 
-.Developer .section-dev-list .main-flex {
+.Project .section-dev-list .main-flex {
     display: flex;
     gap: 24px;
 }
 
 
-.Developer .section-dev-list .dev-list-filter {
+.Project .section-dev-list .dev-list-filter {
     display: flex;
     height: 40px;
     margin-bottom: 40px;
@@ -30,21 +30,21 @@
     justify-content: space-between;
 }
 
-.Developer .section-dev-list .dev-list-filter .custom-select-container {
+.Project .section-dev-list .dev-list-filter .custom-select-container {
     width: 200px;
 }
 
-.Developer .section-dev-list .dev-list-filter .custom-select-container .arrow {
+.Project .section-dev-list .dev-list-filter .custom-select-container .arrow {
     transform: translateY(2px);
 }
 
-.Developer .section-dev-list .dev-list-filter .custom-select-header {
+.Project .section-dev-list .dev-list-filter .custom-select-header {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 
-.Developer .section-dev-list .dev-list-filter span {
+.Project .section-dev-list .dev-list-filter span {
     font-size: 16px;
     font-weight: 600;
     color: #1B1B1B;
@@ -53,7 +53,7 @@
 }
 
 
-.Developer .section-dev-list .dev-list-inner {
+.Project .section-dev-list .dev-list-inner {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -61,7 +61,7 @@
 }
 
 
-.Developer .section-dev-list .filter-side {
+.Project .section-dev-list .filter-side {
     flex-basis: 24%;
     flex-shrink: 1;
     min-width: 24%;
@@ -69,11 +69,10 @@
 
 }
 
-.Developer .section-dev-list .dev-list-inner .dev-card {
+.Project .section-dev-list .dev-list-inner .dev-card {
     flex-basis: calc(33.33333% - 20px);
     min-width: calc(33.33333% - 20px);
     border: 1px solid #ddd;
-    min-height: 480px;
     padding: 10px;
     border-radius: 6px;
 }
