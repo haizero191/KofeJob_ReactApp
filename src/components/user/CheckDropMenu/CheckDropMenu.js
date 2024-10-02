@@ -46,7 +46,6 @@ const CheckDropMenu = ({ title = "", max = 4, options = [] }) => {
               {options.map((opt) => {
                 return (
                   <li key={opt}>
-                    {" "}
                     <input type="checkbox" className="checkmark" />
                     {opt.label}
                   </li>

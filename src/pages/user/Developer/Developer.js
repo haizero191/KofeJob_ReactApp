@@ -86,7 +86,6 @@ const Developer = () => {
     },
   ];
 
-
   const options = [
     { value: "option0", label: "All" },
     { value: "option1", label: "Popular" },
@@ -98,31 +97,51 @@ const Developer = () => {
 
   return (
     <div className="Developer">
+      {/* Bread crumb and current route */}
       <div className="section-bread-crumb">
         <div className="container">
-          <BreadCrumb title="Freelancer Grid" page="Developer"/>
+          <BreadCrumb title="Freelancer Grid" page="Developer" />
         </div>
       </div>
 
       <div className="section-dev-list">
         <div className="container">
           <div className="main-flex">
+            {/* Filter sidebar */}
             <div className="filter-side">
-                <FilterSide />
+              <FilterSide />
             </div>
             <div className="dev-list">
+              {/* Filter-top */}
               <div className="dev-list-filter">
                 <span>Found 9 Results</span>
                 <CustomSelect options={options} placeholder="Sort By" />
               </div>
+
+              {/* List-render */}
               <div className="dev-list-inner">
                 {developers.map((dev, index) => {
                   return (
-                    <div className="dev-card" key={dev.name+ "_" + index}>
+                    <div className="dev-card" key={dev.name + "_" + index}>
                       <DevCardView infomation={dev} />
                     </div>
                   );
                 })}
+              </div>
+
+              {/* Navigator */}
+              <div className="dev-list-navigator">
+                <div className="arrow arrow-left">
+                  <i class="bi bi-chevron-left"></i>
+                </div>
+                <div className="number-page page-actived">1</div>
+                <div className="number-page">2</div>
+                <div className="number-page">3</div>
+                <div className="number-page dot-summary">...</div>
+                <div className="number-page">20</div>
+                <div className="arrow arrow-right">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
               </div>
             </div>
           </div>

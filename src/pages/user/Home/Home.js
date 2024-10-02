@@ -67,8 +67,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Section Top Review */}
-
+      {/* Section Top Review - Removed*/}
+      {/* Section Partner - Removed*/}
 
       {/* Section Blog */}
       <div className="section-blog">
