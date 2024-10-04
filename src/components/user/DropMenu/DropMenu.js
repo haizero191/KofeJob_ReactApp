@@ -11,7 +11,7 @@ const DropMenu = () => {
       ref: [
         {
           sub: "Freelancer List",
-          href: "/developer",
+          href: "/developers",
         },
       ],
     },
@@ -25,6 +25,7 @@ const DropMenu = () => {
     },
     {
       sub: "Projects",
+      href: "/projects",
       ref: [],
     },
     {
@@ -50,7 +51,7 @@ const DropMenu = () => {
     {
       sub: "Projects",
       ref: [],
-      href: "/project",
+      href: "/projects",
     },
     {
       sub: "Dashboard",
@@ -98,14 +99,6 @@ const DropMenu = () => {
     }
   ];
 
-  // Blogs Data
-  const blogs = [
-    {
-      sub: "Blogs",
-      ref: [],
-    },
-  ];
-
   const navigate = useNavigate();
 
   /* NAVIGATE TO PAGE  ------------------- */
@@ -125,21 +118,21 @@ const DropMenu = () => {
           <span>For employers</span>
           <i className="bi bi-chevron-down"></i>
           <div className="nav-menu-container">
-            {employers.map((emp) => {
+            {employers.map((item) => {
               return (
                 <div
                   className={
-                    "sub-nav-item" + (emp.ref.length > 0 ? " sub-nav-drop" : "")
+                    "sub-nav-item" + (item.ref.length > 0 ? " sub-nav-drop" : "")
                   }
-                  key={emp.sub}
+                  key={item.sub}
                 >
-                  {emp.sub}
-                  {emp.ref.length > 0 && (
+                  {item.sub}
+                  {item.ref.length > 0 && (
                     <i className="bi bi-chevron-right"></i>
                   )}
-                  {emp.ref.length > 0 && (
+                  {item.ref.length > 0 && (
                     <div className="nav-ref-container">
-                      {emp.ref.map((refer) => {
+                      {item.ref.map((refer) => {
                         return (
                           <div
                             className="sub-nav-item"
@@ -163,22 +156,22 @@ const DropMenu = () => {
           <span>For freelancer</span>
           <i className="bi bi-chevron-down"></i>
           <div className="nav-menu-container">
-            {freelancer.map((emp) => {
+            {freelancer.map((item) => {
               return (
                 <div
                   className={
-                    "sub-nav-item" + (emp.ref.length > 0 ? " sub-nav-drop" : "")
+                    "sub-nav-item" + (item.ref.length > 0 ? " sub-nav-drop" : "")
                   }
-                  key={emp.sub}
-                  onClick={() => onNavRoute(emp.href ? emp.href : "")}
+                  key={item.sub}
+                  onClick={() => onNavRoute(item.href ? item.href : "")}
                 >
-                  {emp.sub}
-                  {emp.ref.length > 0 && (
+                  {item.sub}
+                  {item.ref.length > 0 && (
                     <i className="bi bi-chevron-right"></i>
                   )}
-                  {emp.ref.length > 0 && (
+                  {item.ref.length > 0 && (
                     <div className="nav-ref-container">
-                      {emp.ref.map((refer) => {
+                      {item.ref.map((refer) => {
                         return (
                           <div
                             className="sub-nav-item"
@@ -202,22 +195,22 @@ const DropMenu = () => {
           <span>Pages</span>
           <i className="bi bi-chevron-down"></i>
           <div className="nav-menu-container">
-            {pages.map((emp) => {
+            {pages.map((item) => {
               return (
                 <div
                   className={
-                    "sub-nav-item" + (emp.ref.length > 0 ? " sub-nav-drop" : "")
+                    "sub-nav-item" + (item.ref.length > 0 ? " sub-nav-drop" : "")
                   }
-                  key={emp.sub}
-                  onClick={() => onNavRoute(emp.href ? emp.href : "")}
+                  key={item.sub}
+                  onClick={() => onNavRoute(item.href ? item.href : "")}
                 >
-                  {emp.sub}
-                  {emp.ref.length > 0 && (
+                  {item.sub}
+                  {item.ref.length > 0 && (
                     <i className="bi bi-chevron-right"></i>
                   )}
-                  {emp.ref.length > 0 && (
+                  {item.ref.length > 0 && (
                     <div className="nav-ref-container">
-                      {emp.ref.map((refer) => {
+                      {item.ref.map((refer) => {
                         return (
                           <div
                             className="sub-nav-item"
@@ -237,41 +230,8 @@ const DropMenu = () => {
         </div>
 
         {/* Blogs */}
-        <div className="nav-item nav-dropmenu">
+        <div className="nav-item nav-dropmenu" onClick={() => onNavRoute("/blogs")}>
           <span>Blogs</span>
-          <i className="bi bi-chevron-down"></i>
-          <div className="nav-menu-container">
-            {blogs.map((emp) => {
-              return (
-                <div
-                  className={
-                    "sub-nav-item" + (emp.ref.length > 0 ? " sub-nav-drop" : "")
-                  }
-                  key={emp.sub}
-                >
-                  {emp.sub}
-                  {emp.ref.length > 0 && (
-                    <i className="bi bi-chevron-right"></i>
-                  )}
-                  {emp.ref.length > 0 && (
-                    <div className="nav-ref-container">
-                      {emp.ref.map((refer) => {
-                        return (
-                          <div
-                            className="sub-nav-item"
-                            key={refer.sub}
-                            onClick={onNavRoute(refer.href)}
-                          >
-                            {refer.sub}
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
         </div>
 
         <div className="nav-item nav-dropmenu">

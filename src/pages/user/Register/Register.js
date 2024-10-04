@@ -107,7 +107,7 @@ const Register = () => {
             <div className="input-block input-check">
               <div className="position-relative">
                 <input type="checkbox" className="checkmark"/>
-                <span>I have read and agree to all <a>Terms & Conditions</a></span>
+                <span>I have read and agree to all <a href>Terms & Conditions</a></span>
               </div>
             </div>
           </div>

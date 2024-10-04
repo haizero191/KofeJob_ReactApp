@@ -29,6 +29,10 @@
     overflow: hidden;
 }
 
+.SectionBlog .section-content .blog-list .blog-item:hover .info h3 {
+    color: #E65425!important;
+}
+
 .SectionBlog .section-content .blog-list .blog-item .BlogCard .image {
     height: 280px;
     background-color: red;

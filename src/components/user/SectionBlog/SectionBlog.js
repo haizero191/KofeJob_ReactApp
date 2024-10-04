@@ -3,12 +3,11 @@ import "./SectionBlog.css";
 import CustomTitle from "../CustomTitle/CustomTitle";
 import BlogImg1 from "../../../assets/images/blog/blog-01.jpg";
 import BlogImg2 from "../../../assets/images/blog/blog-02.jpg";
-import BlogImg3 from "../../../assets/images/blog/blog-03.jpg";
 import AuthorImg1 from "../../../assets/images/img-02.jpg";
 import AuthorImg2 from "../../../assets/images/img-03.jpg";
 
 
-const BlogCard = ({ data }) => {
+const BlogCardMini = ({ data }) => {
   return (
     <div className="BlogCard">
       <div className="image">
@@ -88,7 +87,7 @@ const SectionBlog = () => {
           {blogData.map((blog) => {
             return (
               <div className="blog-item">
-                <BlogCard data={blog} />
+                <BlogCardMini data={blog} />
               </div>
             );
           })}

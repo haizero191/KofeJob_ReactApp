@@ -17,7 +17,7 @@ const SectionAboutReview = () => {
               <img src={CheckedIcon} alt="Img" class="img-fluid" />
             </div>
             <div class="demand-content">
-              <h6></h6>
+
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
                 modi, saepe hic esse maxime quasi, sapiente ex debitis quis
@@ -31,7 +31,6 @@ const SectionAboutReview = () => {
               <img src={CheckedIcon} alt="Img" class="img-fluid" />
             </div>
             <div class="demand-content">
-              <h6></h6>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
                 modi, saepe hic esse maxime quasi, sapiente ex debitis quis
@@ -45,7 +44,6 @@ const SectionAboutReview = () => {
               <img src={CheckedIcon} alt="Img" class="img-fluid" />
             </div>
             <div class="demand-content">
-              <h6></h6>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
                 modi, saepe hic esse maxime quasi, sapiente ex debitis quis

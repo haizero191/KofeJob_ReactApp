@@ -3,7 +3,7 @@ import "./CustomTitle.css"
 
 
 const CustomTitle = ({ title, desc, position = "middle" }) => {
-  const posClasses = ["left", "middle", "right"];
+
 
   useEffect(() => {
    

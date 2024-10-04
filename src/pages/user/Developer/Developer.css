@@ -1,6 +1,4 @@
-.Developer {
-
-}
+.Developer {}
 
 .Developer .section-bread-crumb {
     background-color: #FFF5F3;
@@ -11,9 +9,7 @@
     padding: 80px 0 30px;
 }
 
-.Developer .section-dev-list .dev-list {
-
-}
+.Developer .section-dev-list .dev-list {}
 
 .Developer .section-dev-list .main-flex {
     display: flex;
@@ -117,9 +113,9 @@
 }
 
 .Developer .section-dev-list .dev-list-navigator div.arrow-left {
-   margin-right: 6px;
+    margin-right: 6px;
 }
 
 .Developer .section-dev-list .dev-list-navigator div.arrow-right {
     margin-left: 6px;
- }
+}

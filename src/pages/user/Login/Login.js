@@ -78,19 +78,19 @@ const Login = () => {
             <div className="action-socials">
               <div className="social-btn">
                 <div className="social-icon">
-                  <img src={GoogleSVG} />
+                  <img src={GoogleSVG} alt="icon social"/>
                 </div>
                 <span>Google</span>
               </div>
               <div className="social-btn">
                 <div className="social-icon">
-                  <img src={FacebookSVG} />
+                  <img src={FacebookSVG} alt="icon social"/>
                 </div>
                 <span>Facebook</span>
               </div>
               <div className="social-btn">
                 <div className="social-icon">
-                  <img src={AppleSVG} />
+                  <img src={AppleSVG} alt="icon social"/>
                 </div>
                 <span>Apple</span>
               </div>
