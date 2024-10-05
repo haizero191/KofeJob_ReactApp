@@ -1,6 +1,6 @@
 import React from "react";
 import BreadCrumb from "../../../components/user/BreadCrumb/BreadCrumb";
-import "./Developer.css";
+import "./Member.css";
 import Ava1 from "../../../assets/images/user/avatar-1.jpg";
 import Ava2 from "../../../assets/images/user/avatar-2.jpg";
 import Ava3 from "../../../assets/images/user/avatar-3.jpg";
@@ -10,11 +10,12 @@ import DevCardView from "../../../components/user/DevCardView/DevCardView";
 import CustomSelect from "../../../components/user/CustomSelect/CustomSelect";
 import FilterSide from "../../../components/user/FilterSide/FilterSide";
 
-const Developer = () => {
-  const developers = [
+
+const Member = () => {
+  const Members = [
     {
       name: "Richard hendrick",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -22,7 +23,7 @@ const Developer = () => {
     },
     {
       name: "Erlich bachman",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -30,7 +31,7 @@ const Developer = () => {
     },
     {
       name: "Martin Starr",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -38,7 +39,7 @@ const Developer = () => {
     },
     {
       name: "Dinesh Chugtai ",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -46,7 +47,7 @@ const Developer = () => {
     },
     {
       name: "Bill gate",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -54,7 +55,7 @@ const Developer = () => {
     },
     {
       name: "Bill gate",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -62,7 +63,7 @@ const Developer = () => {
     },
     {
       name: "Bill gate",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -70,7 +71,7 @@ const Developer = () => {
     },
     {
       name: "Bill gate",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -78,7 +79,7 @@ const Developer = () => {
     },
     {
       name: "Bill gate",
-      position: "Fullstack Developer",
+      position: "Fullstack Member",
       vote: 5,
       tags: ["Wed design", "System design", "Node js"],
       salary: "$25 Hourly",
@@ -95,12 +96,15 @@ const Developer = () => {
     { value: "option5", label: "Free" },
   ];
 
+  /* NAVIGATE TO PAGE  ------------------- */
+  
+
   return (
-    <div className="Developer">
+    <div className="Member">
       {/* Bread crumb and current route */}
       <div className="section-bread-crumb">
         <div className="container">
-          <BreadCrumb title="Freelancer Grid" page="Developer" />
+          <BreadCrumb title="Freelancer Grid" page="Member" />
         </div>
       </div>
 
@@ -120,7 +124,7 @@ const Developer = () => {
 
               {/* List-render */}
               <div className="dev-list-inner">
-                {developers.map((dev, index) => {
+                {Members.map((dev, index) => {
                   return (
                     <div className="dev-card" key={dev.name + "_" + index}>
                       <DevCardView infomation={dev} />
@@ -151,4 +155,4 @@ const Developer = () => {
   );
 };
 
-export default Developer;
+export default Member;

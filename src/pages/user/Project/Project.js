@@ -10,7 +10,15 @@ import FilterSide from "../../../components/user/FilterSide/FilterSide";
 import "./Project.css";
 import ProjectCardView from "../../../components/user/ProjectCardView/ProjectCardView";
 
+
+
+
+
+
 const Project = () => {
+
+
+
   const developers = [
     {
       name: "Amaze Tech",

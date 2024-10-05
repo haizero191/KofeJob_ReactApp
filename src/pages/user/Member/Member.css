@@ -1,23 +1,23 @@
-.Developer {}
+.Member {}
 
-.Developer .section-bread-crumb {
+.Member .section-bread-crumb {
     background-color: #FFF5F3;
 }
 
 
-.Developer .section-dev-list {
+.Member .section-dev-list {
     padding: 80px 0 30px;
 }
 
-.Developer .section-dev-list .dev-list {}
+.Member .section-dev-list .dev-list {}
 
-.Developer .section-dev-list .main-flex {
+.Member .section-dev-list .main-flex {
     display: flex;
     gap: 24px;
 }
 
 
-.Developer .section-dev-list .dev-list-filter {
+.Member .section-dev-list .dev-list-filter {
     display: flex;
     height: 40px;
     margin-bottom: 40px;
@@ -26,21 +26,21 @@
     justify-content: space-between;
 }
 
-.Developer .section-dev-list .dev-list-filter .custom-select-container {
+.Member .section-dev-list .dev-list-filter .custom-select-container {
     width: 200px;
 }
 
-.Developer .section-dev-list .dev-list-filter .custom-select-container .arrow {
+.Member .section-dev-list .dev-list-filter .custom-select-container .arrow {
     transform: translateY(2px);
 }
 
-.Developer .section-dev-list .dev-list-filter .custom-select-header {
+.Member .section-dev-list .dev-list-filter .custom-select-header {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 
-.Developer .section-dev-list .dev-list-filter span {
+.Member .section-dev-list .dev-list-filter span {
     font-size: 16px;
     font-weight: 600;
     color: #1B1B1B;
@@ -49,7 +49,7 @@
 }
 
 
-.Developer .section-dev-list .dev-list-inner {
+.Member .section-dev-list .dev-list-inner {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -57,7 +57,7 @@
 }
 
 
-.Developer .section-dev-list .filter-side {
+.Member .section-dev-list .filter-side {
     flex-basis: 24%;
     flex-shrink: 1;
     min-width: 24%;
@@ -65,7 +65,7 @@
 
 }
 
-.Developer .section-dev-list .dev-list-inner .dev-card {
+.Member .section-dev-list .dev-list-inner .dev-card {
     flex-basis: calc(33.33333% - 20px);
     min-width: calc(33.33333% - 20px);
     border: 1px solid #ddd;
@@ -74,7 +74,7 @@
     border-radius: 6px;
 }
 
-.Developer .section-dev-list .dev-list-navigator {
+.Member .section-dev-list .dev-list-navigator {
     width: 100%;
     margin-top: 40px;
     display: flex;
@@ -82,7 +82,7 @@
 
 }
 
-.Developer .section-dev-list .dev-list-navigator div {
+.Member .section-dev-list .dev-list-navigator div {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -93,29 +93,29 @@
     transition: 0.12s ease-in-out;
 }
 
-.Developer .section-dev-list .dev-list-navigator .number-page.page-actived {
+.Member .section-dev-list .dev-list-navigator .number-page.page-actived {
     background-color: #E65425;
     color: white;
 }
 
-.Developer .section-dev-list .dev-list-navigator div:hover {
+.Member .section-dev-list .dev-list-navigator div:hover {
     color: #E65425;
 }
 
-.Developer .section-dev-list .dev-list-navigator div.arrow {
+.Member .section-dev-list .dev-list-navigator div.arrow {
     width: 40px;
     height: 40px;
     border: 1px solid #ddd;
 }
 
-.Developer .section-dev-list .dev-list-navigator div.arrow i {
+.Member .section-dev-list .dev-list-navigator div.arrow i {
     font-size: 12px;
 }
 
-.Developer .section-dev-list .dev-list-navigator div.arrow-left {
+.Member .section-dev-list .dev-list-navigator div.arrow-left {
     margin-right: 6px;
 }
 
-.Developer .section-dev-list .dev-list-navigator div.arrow-right {
+.Member .section-dev-list .dev-list-navigator div.arrow-right {
     margin-left: 6px;
 }

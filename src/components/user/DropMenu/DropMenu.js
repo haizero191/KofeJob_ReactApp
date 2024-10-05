@@ -11,7 +11,7 @@ const DropMenu = () => {
       ref: [
         {
           sub: "Freelancer List",
-          href: "/developers",
+          href: "/members",
         },
       ],
     },

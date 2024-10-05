@@ -1,14 +1,15 @@
-.BlogTags {
-    background-color: blue;
+.UserSkills {
     width: 100%;
     background: #fff;
     margin-bottom: 30px;
     border: 1px solid #e8e8e8;
     padding: 20px;
+    box-shadow: 0px 8px 16px 0px #8E8DD01F;
+    border-radius: 6px;
 }
 
 
-.BlogTags .widget-main .title h4 {
+.UserSkills .widget-main .title h4 {
     font-weight: bold;
     font-size: 20px;
     position: relative;
@@ -18,28 +19,36 @@
 }
 
 
-.BlogTags .widget-main .content .tag-list {
+.UserSkills .widget-main .content .tag-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    margin-right: -10px;
 }
 
-.BlogTags .widget-main .content .tag-list .tag-item {
+.UserSkills .widget-main .content .tag-list .tag-item {
     background-color: #F4F7FF;
-    padding: 3px 15px;
+    padding: 3px 0px;
     text-transform: capitalize;
     display: inline-block;
     background-color: #F4F7FF;
     border-radius: 5px;
-    font-size: 15px;
-    color: #6e727d;
-    margin: 0 10px 10px 0;
+    font-size: 14px;
+ 
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer;
+    flex-basis: calc(33.3333% - 10px);
+    max-width: calc(33.3333% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
 }
 
-.BlogTags .widget-main .content .tag-list .more {
+.UserSkills .widget-main .content .tag-list .more {
     padding: 3px 15px;
     color: #E65425;
     cursor: pointer;
@@ -48,11 +57,11 @@
     text-transform: capitalize;
 }
 
-.BlogTags .widget-main .content .tag-list .more:hover {
+.UserSkills .widget-main .content .tag-list .more:hover {
     opacity: 1;
 }
 
-.BlogTags .widget-main .content .tag-list .tag-item:hover {
+.UserSkills .widget-main .content .tag-list .tag-item:hover {
     background-color: #E65425;
     color: white;
 }

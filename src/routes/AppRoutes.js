@@ -3,11 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/user/Home/Home";
 import Login from "../pages/user/Login/Login";
 import Register from "../pages/user/Register/Register";
-import Developer from "../pages/user/Developer/Developer";
 import Project from "../pages/user/Project/Project";
 import About from "../pages/user/About/About";
 import Blog from "../pages/user/Blog/Blog";
 import BlogDetail from "../pages/user/BlogDetail/BlogDetail";
+import Profile from "../pages/user/Profile/Profile";
+import Member from "../pages/user/Member/Member";
 
 const AppRoutes = () => {
   return (
@@ -22,7 +23,8 @@ const AppRoutes = () => {
       <Route path="/register" element={<Register />} />
 
       {/* Developer Router */}
-      <Route path="/developers" element={<Developer />} />
+      <Route path="/members" element={<Member />}></Route>
+      <Route path="/members/profile/:userType/:slug" element={<Profile />} />
 
       {/* Project Router */}
       <Route path="/projects" element={<Project />} />
@@ -34,7 +36,10 @@ const AppRoutes = () => {
       <Route path="/blogs" element={<Blog />} />
 
       {/* Blog Detail Router */}
-      <Route path="/blog/:id" element={<BlogDetail />} />
+      <Route path="/blog/:slug" element={<BlogDetail />} />
+
+      {/* Blog Detail Router */}
+      {/* <Route path="/profile/:userType/:slug" element={<Profile />} /> */}
 
     </Routes>
   );

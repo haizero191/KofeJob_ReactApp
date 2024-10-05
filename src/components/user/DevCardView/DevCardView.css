@@ -5,6 +5,7 @@
 
 .DevCardView {
     height: 100%;
+    cursor: pointer;
 }
 
 .DevCardView .dev-card-container {

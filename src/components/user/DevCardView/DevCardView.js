@@ -1,8 +1,16 @@
 import React from "react"
 import "./DevCardView.css"
+import { useNavigate } from "react-router-dom";
 
 
 const DevCardView = ({ infomation }) => {
+
+
+  const navigate = useNavigate();
+  const onNavRoute = (endpoint) => {
+    navigate(endpoint)
+  }
+
   return (
     <div className="DevCardView">
       <div className="dev-card-container">
@@ -36,7 +44,7 @@ const DevCardView = ({ infomation }) => {
           <h4>{infomation.salary}</h4>
         </div>
         <button className="invite">Invite</button>
-        <button className="view-profile">View profile</button>
+        <button className="view-profile"  onClick={() => onNavRoute("profile/freelancer/[id_or_slug]")}>View profile</button>
       </div>
     </div>
   );
